@@ -1,0 +1,34 @@
+{
+  "name": "flames-relationship-finder",
+  "version": "1.0.0",
+  "description": "A fun and interactive relationship compatibility calculator based on the classic FLAMES game",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "python": "python flames_calculator.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/FLAMES.git"
+  },
+  "keywords": [
+    "flames",
+    "relationship",
+    "calculator",
+    "game",
+    "fun",
+    "javascript",
+    "python",
+    "web",
+    "interactive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/FLAMES/issues"
+  },
+  "homepage": "https://github.com/yourusername/FLAMES#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}

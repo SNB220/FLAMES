@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES Relationship Finder</title>
+    <meta name="description" content="Discover your relationship compatibility using the classic FLAMES game - Friends, Love, Affection, Marriage, Enemy, or Siblings!">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center-container">
+        <div class="card p-4 shadow-lg">
+            <h1 class="text-center mb-3">💖 FLAMES Relationship Finder 💖</h1>
+            <p class="text-center text-muted mb-4">Enter two names and discover your relationship destiny!</p>
+            
+            <form id="flamesForm" role="form">
+                <div class="mb-3">
+                    <label for="name1" class="form-label">Enter Your Name:</label>
+                    <input 
+                        type="text" 
+                        id="name1" 
+                        name="name1"
+                        class="form-control" 
+                        placeholder="e.g., John"
+                        required 
+                        autocomplete="given-name"
+                        maxlength="50"
+                        aria-describedby="name1Help"
+                    >
+                    <small id="name1Help" class="form-text text-muted">Letters only, please</small>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="name2" class="form-label">Partner's Name:</label>
+                    <input 
+                        type="text" 
+                        id="name2" 
+                        name="name2"
+                        class="form-control" 
+                        placeholder="e.g., Jane"
+                        required 
+                        autocomplete="name"
+                        maxlength="50"
+                        aria-describedby="name2Help"
+                    >
+                    <small id="name2Help" class="form-text text-muted">Letters only, please</small>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Find Result 🔮</button>
+                </div>
+            </form>
+            
+            <div id="result" class="text-center mt-4" role="alert" aria-live="polite"></div>
+            
+            <div class="text-center">
+                <button id="restartBtn" class="btn btn-danger mt-3" style="display: none;" aria-label="Restart the game">
+                    Restart 🔄
+                </button>
+            </div>
+            
+            <div class="mt-4 text-center">
+                <small class="text-muted">
+                    <strong>How it works:</strong> FLAMES stands for Friendship, Love, Affection, Marriage, Enemy, and Siblings. 
+                    The algorithm removes common letters between names and uses the remaining count to determine your relationship!
+                </small>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

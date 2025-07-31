@@ -1,0 +1,208 @@
+/* Apply a gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff758c, #ff7eb3, #ffb199, #ff758c);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Centering the form */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%; /* Change to a fixed width if needed */
+    max-width: 350px; /* Set a max-width to keep it compact */
+    margin: 0 auto; /* Center it */
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+    border-color: #ff758c;
+    box-shadow: 0 0 8px rgba(255, 117, 140, 0.5);
+}
+
+/* Primary Button */
+.btn-primary {
+    background: #ff758c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background: #ff4f7b;
+}
+
+/* Restart Button */
+.btn-danger {
+    background: #ff3d67;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Restart Button Hover Effect */
+.btn-danger:hover {
+    background: #ff1e50;
+}
+
+/* Result Text */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff3d67;
+    animation: fadeInUp 0.6s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pulse {
+    animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border: 2px solid #ff758c;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Error and success states */
+.error {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
+.success {
+    color: #198754 !important;
+}
+
+.perfect {
+    background: linear-gradient(45deg, #ffd700, #ffed4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+/* Input field improvements */
+.form-control:invalid {
+    border-color: #dc3545;
+}
+
+.form-control:valid {
+    border-color: #198754;
+}
+
+/* Button loading state */
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+        padding: 30px 20px;
+    }
+    
+    .card h1 {
+        font-size: 1.5rem;
+    }
+    
+    #result {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+    
+    .form-control {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
