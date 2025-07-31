@@ -1,9 +1,9 @@
 # 💖 FLAMES Relationship Finder
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://yourusername.github.io/FLAMES)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://SNB220.github.io/FLAMES)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/FLAMES.svg)](https://github.com/yourusername/FLAMES/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/FLAMES.svg)](https://github.com/yourusername/FLAMES/network)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/FLAMES.svg)](https://github.com/SNB220/FLAMES/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/FLAMES.svg)](https://github.com/SNB220e/FLAMES/network)
 
 A fun and interactive relationship compatibility calculator based on the classic FLAMES game! Built with vanilla HTML, CSS, JavaScript, and Python.
 
@@ -17,17 +17,7 @@ FLAMES stands for:
 - **E** - Enemy 😈
 - **S** - Siblings 👩‍👦
 
-## � Live Demo
-
-🚀 **[Try it live here!](https://yourusername.github.io/FLAMES)** (Replace with your GitHub Pages URL)
-
 ## 📸 Screenshots
-
-### Web Interface
-*Add screenshot of the web interface here*
-
-### Python CLI
-*Add screenshot of the Python terminal interface here*
 
 ## �🌟 Features
 
@@ -47,7 +37,7 @@ FLAMES stands for:
 ## 🚀 How to Use
 
 ### 🌐 Web Version (Recommended)
-1. **Online**: Visit the [live demo](https://yourusername.github.io/FLAMES)
+1. **Online**: Visit the [live demo](https://SNB220.github.io/FLAMES)
 2. **Local**: Clone the repo and open `index.html` in any modern web browser
 3. Enter two names in the input fields
 4. Click "Find Result 🔮" to see your FLAMES result
@@ -155,7 +145,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 🐛 Issues
 
-Found a bug? Have a suggestion? Please [open an issue](https://github.com/yourusername/FLAMES/issues/new).
+Found a bug? Have a suggestion? Please [open an issue](https://github.com/SNB220/FLAMES/issues/new).
 
 ## ⭐ Show Your Support
 
@@ -166,10 +156,7 @@ Give a ⭐️ if this project helped you or if you found it interesting!
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@yourusername](https://github.com/SNB)
 
 ## 🙏 Acknowledgments
 
@@ -179,10 +166,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/FLAMES)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/FLAMES)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/FLAMES)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/FLAMES)
+![GitHub repo size](https://img.shields.io/github/repo-size/SNB220FLAMES)
+![GitHub last commit](https://img.shields.io/github/last-commit/SNB220/FLAMES)
+![GitHub issues](https://img.shields.io/github/issues/SNB220/FLAMES)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/SNB220/FLAMES)
 
 ## 🎉 Fun Facts
 
