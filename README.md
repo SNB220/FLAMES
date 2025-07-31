@@ -19,7 +19,7 @@ FLAMES stands for:
 
 ## 📸 Screenshots
 
-## �🌟 Features
+## 🌟 Features
 
 ### Web Version
 - **Beautiful UI**: Modern, responsive design with animated gradients
