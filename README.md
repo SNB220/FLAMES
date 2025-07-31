@@ -18,7 +18,7 @@ FLAMES stands for:
 - **S** - Siblings 👩‍👦
 
 ## 📸 Screenshots
-<img width="1080" height="1350" alt="Screenshot_20250801-001437 Brave" src="https://github.com/user-attachments/assets/40d3d542-c3eb-4707-b84f-c6c34ece78a2" />
+<img width="1080" height="2280" alt="Screenshot_20250801-001437 Brave" src="https://github.com/user-attachments/assets/51529cc4-f7f9-4008-bfca-ef9496826fbe" />
 <img width="734" height="735" alt="Screenshot 2025-07-31 234025" src="https://github.com/user-attachments/assets/e84c2be2-926a-4a0c-8136-6e8a8571112e" />
 
 ## 🌟 Features
