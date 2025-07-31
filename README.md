@@ -156,7 +156,7 @@ Give a ⭐️ if this project helped you or if you found it interesting!
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
-- GitHub: [@yourusername](https://github.com/SNB)
+- GitHub: [@SNB220](https://github.com/SNB220)
 
 ## 🙏 Acknowledgments
 
@@ -166,7 +166,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/SNB220FLAMES)
+![GitHub repo size](https://img.shields.io/github/repo-size/SNB220/FLAMES)
 ![GitHub last commit](https://img.shields.io/github/last-commit/SNB220/FLAMES)
 ![GitHub issues](https://img.shields.io/github/issues/SNB220/FLAMES)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/SNB220/FLAMES)
