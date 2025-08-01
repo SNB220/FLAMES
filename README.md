@@ -1,11 +1,13 @@
-# 💖 FLAMES Relationship Finder
+# 💖 SNB FLAMES - R## 🌐 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://yourusername.github.io/FLAMES)
+🚀 **[Try SNB FLAMES live here!](https://snbflames.dev)**tionship Finder
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://snbflames.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/FLAMES.svg)](https://github.com/yourusername/FLAMES/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/FLAMES.svg)](https://github.com/yourusername/FLAMES/network)
+[![GitHub stars](https://img.shields.io/github/stars/SNB220/FLAMES.svg)](https://github.com/SNB220/FLAMES/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/SNB220/FLAMES.svg)](https://github.com/SNB220/FLAMES/network)
 
-A fun and interactive relationship compatibility calculator based on the classic FLAMES game! Built with vanilla HTML, CSS, JavaScript, and Python.
+A fun and interactive relationship compatibility calculator based on the classic FLAMES game! Built with vanilla HTML, CSS, JavaScript, and Python by SNB.
 
 ## 🎮 What is FLAMES?
 
@@ -47,7 +49,7 @@ FLAMES stands for:
 ## 🚀 How to Use
 
 ### 🌐 Web Version (Recommended)
-1. **Online**: Visit the [live demo](https://yourusername.github.io/FLAMES)
+1. **Online**: Visit [SNB FLAMES](https://snbflames.dev)
 2. **Local**: Clone the repo and open `index.html` in any modern web browser
 3. Enter two names in the input fields
 4. Click "Find Result 🔮" to see your FLAMES result
@@ -56,7 +58,7 @@ FLAMES stands for:
 ### 🐍 Python Version
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/FLAMES.git
+   git clone https://github.com/SNB220/FLAMES.git
    cd FLAMES
    ```
 2. Run the Python script:

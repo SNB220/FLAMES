@@ -31,7 +31,7 @@ document.getElementById('flamesForm').addEventListener('submit', function(event)
     // Simulate processing time for better UX
     setTimeout(() => {
         const result = calculateFlames(name1, name2);
-        showResult(result.message, result.type, result.emoji);
+        showResult(result.message, result.type, result.emoji, result.resultType);
         document.getElementById('restartBtn').style.display = 'block';
     }, 1500);
 });
@@ -63,13 +63,14 @@ function calculateFlames(name1, name2) {
         return {
             message: "💫 Perfect Match! You're meant for each other!",
             type: "perfect",
-            emoji: "💫"
+            emoji: "💫",
+            resultType: "perfect"
         };
     }
 
     // FLAMES options with better descriptions and emojis
     let flames = [
-        { name: 'Friendship', emoji: '�', description: 'You make great friends!' },
+        { name: 'Friendship', emoji: '🤘', description: 'You make great friends!' },
         { name: 'Love', emoji: '❤️', description: 'True love awaits!' },
         { name: 'Affection', emoji: '💕', description: 'Sweet affection between you!' },
         { name: 'Marriage', emoji: '💍', description: 'Wedding bells are ringing!' },
@@ -88,11 +89,12 @@ function calculateFlames(name1, name2) {
     return {
         message: `${result.emoji} ${result.name} ${result.emoji}\n${result.description}`,
         type: "success",
-        emoji: result.emoji
+        emoji: result.emoji,
+        resultType: result.name
     };
 }
 
-function showResult(message, type, emoji = "") {
+function showResult(message, type, emoji = "", resultType = "") {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = message.replace('\n', '<br>');
     resultElement.className = `text-center mt-3 ${type}`;
@@ -101,8 +103,43 @@ function showResult(message, type, emoji = "") {
     resultElement.classList.add('pulse');
     setTimeout(() => resultElement.classList.remove('pulse'), 600);
 
+    // Play audio based on result type
+    if (resultType && type === "success") {
+        playResultAudio(resultType);
+    }
+
     // Hide loading if it was showing
     hideLoading();
+}
+
+function playResultAudio(resultType) {
+    // Check if audio is enabled
+    if (!isAudioEnabled) {
+        return;
+    }
+
+    // Stop any currently playing audio
+    const allAudios = document.querySelectorAll('audio');
+    allAudios.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+    });
+
+    // For perfect match, play love audio as fallback
+    if (resultType === "perfect") {
+        resultType = "Love";
+    }
+
+    // Play the appropriate audio
+    const audioId = resultType.toLowerCase() + 'Audio';
+    const audio = document.getElementById(audioId);
+    
+    if (audio) {
+        audio.play().catch(error => {
+            console.log('Audio playback failed:', error);
+            // This is normal on some browsers due to autoplay policies
+        });
+    }
 }
 
 function showLoading() {
@@ -162,5 +199,27 @@ document.getElementById('name1').addEventListener('keypress', function(event) {
 document.getElementById('name2').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         document.getElementById('flamesForm').dispatchEvent(new Event('submit'));
+    }
+});
+
+// Audio control functionality
+let isAudioEnabled = true;
+
+document.getElementById('audioToggle').addEventListener('click', function() {
+    isAudioEnabled = !isAudioEnabled;
+    const toggleBtn = document.getElementById('audioToggle');
+    
+    if (isAudioEnabled) {
+        toggleBtn.innerHTML = '🔊 Audio: ON';
+        toggleBtn.className = 'btn btn-outline-secondary btn-sm';
+    } else {
+        toggleBtn.innerHTML = '🔇 Audio: OFF';
+        toggleBtn.className = 'btn btn-outline-danger btn-sm';
+        // Stop any currently playing audio
+        const allAudios = document.querySelectorAll('audio');
+        allAudios.forEach(audio => {
+            audio.pause();
+            audio.currentTime = 0;
+        });
     }
 });
