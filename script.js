@@ -69,7 +69,7 @@ function calculateFlames(name1, name2) {
 
     // FLAMES options with better descriptions and emojis
     let flames = [
-        { name: 'Friendship', emoji: '�', description: 'You make great friends!' },
+        { name: 'Friendship', emoji: '🤘', description: 'You make great friends!' },
         { name: 'Love', emoji: '❤️', description: 'True love awaits!' },
         { name: 'Affection', emoji: '💕', description: 'Sweet affection between you!' },
         { name: 'Marriage', emoji: '💍', description: 'Wedding bells are ringing!' },
