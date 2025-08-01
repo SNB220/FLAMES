@@ -43,7 +43,6 @@ FLAMES stands for:
 ## 🚀 How to Use
 
 ### 🌐 Web Version (Recommended)
-<<<<<<< HEAD
 1. **Online**: Visit [SNB FLAMES](https://snb220.github.io/FLAMES/)
 2. **Local**: Clone the repo and open `index.html` in any modern web browser
 3. Enter two names in the input fields
