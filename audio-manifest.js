@@ -12,6 +12,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Love/Love.mp3"
     ],
     "Marriage": [
+        "Audio/Marriage/Marriage.mp3",
         "Audio/Marriage/playback1.mp3"
     ],
     "Siblings": [
