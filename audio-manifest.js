@@ -2,6 +2,7 @@ window.FLAMES_AUDIO_TRACKS = {
     "Affection": [
         "Audio/Affection/Affection.mp3",
         "Audio/Affection/palybacksai.mp3",
+        "Audio/Affection/playbackosk.mp3",
         "Audio/Affection/playbackra.mp3",
         "Audio/Affection/playbackvaratho.mp3"
     ],
