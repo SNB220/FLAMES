@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES / Relationship Finder</title>
+    <meta name="description" content="Discover your relationship compatibility using the classic FLAMES game - Friends, Love, Affection, Marriage, Enemy, or Siblings!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="center-container">
+        <div class="app-shell">
+            <header class="intro-panel">
+                <div class="topline"><span class="signal-dot"></span> THE ORIGINAL NAME GAME <span class="year">EST. 1890s</span></div>
+                <div class="flames-lockup">
+                    <span class="eyebrow">A little science</span>
+                    <h1>FLAMES<span class="period">.</span></h1>
+                    <p>Put two names into the universe<br>and see what comes back.</p>
+                </div>
+                <div class="orbit-mark" aria-hidden="true"><span>F</span><span>L</span><span>A</span><span>M</span><span>E</span><span>S</span><i></i></div>
+                <div class="intro-note"><span>01</span><p>Common letters cancel out.<br>The rest decides your story.</p></div>
+            </header>
+
+            <section class="form-panel" aria-labelledby="form-title">
+                <div class="section-heading"><span class="section-number">01 / 02</span><h2 id="form-title">Name your<br><em>pair.</em></h2></div>
+            
+            <form id="flamesForm" role="form">
+                <div class="name-field">
+                    <label for="name1">First name <span>01</span></label>
+                    <input 
+                        type="text" 
+                        id="name1" 
+                        name="name1"
+                        class="form-control" 
+                        placeholder="Your name"
+                        required 
+                        autocomplete="given-name"
+                        maxlength="50"
+                        aria-describedby="name1Help"
+                    >
+                    <small id="name1Help" class="form-text">Example: Muthu Pandi</small>
+                </div>
+                
+                <div class="name-field">
+                    <label for="name2">Second name <span>02</span></label>
+                    <input 
+                        type="text" 
+                        id="name2" 
+                        name="name2"
+                        class="form-control" 
+                        placeholder="Their name"
+                        required 
+                        autocomplete="name"
+                        maxlength="50"
+                        aria-describedby="name2Help"
+                    >
+                    <small id="name2Help" class="form-text">Example: Dhanalakshmi</small>
+                </div>
+                
+                <div class="action-row">
+                    <button type="submit" class="btn btn-primary">Reveal the result <span>↗</span></button>
+                    <span class="action-hint">Takes a few seconds</span>
+                </div>
+            </form>
+            
+            <div id="result" role="alert" aria-live="polite"></div>
+            
+            <div class="result-actions">
+                <button id="restartBtn" class="btn btn-danger" style="display: none;" aria-label="Restart the game">
+                    Start over <span>↺</span>
+                </button>
+            </div>
+            
+            <!-- Audio Controls -->
+            <div class="audio-row">
+                <span class="audio-label">SOUNDTRACK</span>
+                <button id="audioToggle" class="btn btn-outline-secondary" title="Toggle Audio">
+                    🔊 ON
+                </button>
+            </div>
+            
+            <div class="how-it-works">
+                <small><strong>THE FORMULA</strong> FLAMES stands for Friendship, Love, Affection, Marriage, Enemy, and Siblings. The algorithm removes common letters to find the remaining count.
+                </small>
+            </div>
+        </section>
+        </div>
+    </main>
+    
+    <!-- The selected result track is loaded here by script.js. -->
+    <audio id="resultAudio" preload="auto"></audio>
+    
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <small>
+            MADE FOR CURIOUS HEARTS <span>•</span> <a href="https://github.com/SNB220" target="_blank" rel="noopener noreferrer">SNB⚡</a>
+        </small>
+    </footer>
+    
+    <script src="audio-manifest.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
