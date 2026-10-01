@@ -14,6 +14,7 @@ window.FLAMES_AUDIO_TRACKS = {
     ],
     "Enemy": [
         "Audio/Enemy/Enemy.mp3",
+        "Audio/Enemy/playbackbt.mp3",
         "Audio/Enemy/playbackffl.mp3",
         "Audio/Enemy/playbacksev.mp3",
         "Audio/Enemy/playbacksp.mp3",
@@ -28,7 +29,8 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Friendship/playbackjr.mp3",
         "Audio/Friendship/playbackmus.mp3",
         "Audio/Friendship/playbacknan.mp3",
-        "Audio/Friendship/playbacknat.mp3"
+        "Audio/Friendship/playbacknat.mp3",
+        "Audio/Friendship/playbacknunu.mp3"
     ],
     "Love": [
         "Audio/Love/Love.mp3",
@@ -45,10 +47,18 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Marriage/playback1.mp3",
         "Audio/Marriage/playbackma2.mp3",
         "Audio/Marriage/playbackmar.mp3",
+        "Audio/Marriage/playbackmarthi.mp3",
         "Audio/Marriage/playbackvt.mp3"
     ],
     "Siblings": [
+        "Audio/Siblings/playbackaaba.mp3",
+        "Audio/Siblings/playbackana.mp3",
+        "Audio/Siblings/playbackanapo.mp3",
         "Audio/Siblings/playbackat.mp3",
+        "Audio/Siblings/playbackatvi.mp3",
+        "Audio/Siblings/playbackss.mp3",
+        "Audio/Siblings/playbackstm.mp3",
+        "Audio/Siblings/playbackthan.mp3",
         "Audio/Siblings/Siblings.mp3"
     ]
 };
