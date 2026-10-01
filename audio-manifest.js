@@ -14,14 +14,21 @@ window.FLAMES_AUDIO_TRACKS = {
     ],
     "Enemy": [
         "Audio/Enemy/Enemy.mp3",
+        "Audio/Enemy/playbackffl.mp3",
+        "Audio/Enemy/playbacksev.mp3",
+        "Audio/Enemy/playbacksp.mp3",
         "Audio/Enemy/playbackvil.mp3"
     ],
     "Friendship": [
         "Audio/Friendship/Friendship.mp3",
+        "Audio/Friendship/playbackadr.mp3",
+        "Audio/Friendship/playbackdo.mp3",
         "Audio/Friendship/playbackff.mp3",
         "Audio/Friendship/playbackfr.mp3",
+        "Audio/Friendship/playbackjr.mp3",
         "Audio/Friendship/playbackmus.mp3",
-        "Audio/Friendship/playbacknan.mp3"
+        "Audio/Friendship/playbacknan.mp3",
+        "Audio/Friendship/playbacknat.mp3"
     ],
     "Love": [
         "Audio/Love/Love.mp3",
