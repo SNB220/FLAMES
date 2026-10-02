@@ -5,6 +5,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/playbackaf.mp3",
         "Audio/Affection/playbackani.mp3",
         "Audio/Affection/playbackdead.mp3",
+        "Audio/Affection/playbackgil.mp3",
         "Audio/Affection/playbackki.mp3",
         "Audio/Affection/playbackml.mp3",
         "Audio/Affection/playbackmll.mp3",
@@ -14,7 +15,8 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/playbackrel.mp3",
         "Audio/Affection/playbacktham.mp3",
         "Audio/Affection/playbackthbot.mp3",
-        "Audio/Affection/playbackvaratho.mp3"
+        "Audio/Affection/playbackvaratho.mp3",
+        "Audio/Affection/playbackvas.mp3"
     ],
     "Enemy": [
         "Audio/Enemy/Enemy.mp3",
@@ -47,15 +49,18 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Love/playbackmas.mp3",
         "Audio/Love/playbackmila.mp3",
         "Audio/Love/playbackmz.mp3",
+        "Audio/Love/playbackour.mp3",
         "Audio/Love/playbackpasa.mp3"
     ],
     "Marriage": [
         "Audio/Marriage/Marriage.mp3",
         "Audio/Marriage/playback1.mp3",
+        "Audio/Marriage/playbackkal.mp3",
         "Audio/Marriage/playbackma2.mp3",
         "Audio/Marriage/playbackmar.mp3",
         "Audio/Marriage/playbackmarthi.mp3",
         "Audio/Marriage/playbacknanthava.mp3",
+        "Audio/Marriage/playbacksara.mp3",
         "Audio/Marriage/playbackvt.mp3"
     ],
     "Siblings": [
