@@ -4,6 +4,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/palybacksai.mp3",
         "Audio/Affection/playbackaf.mp3",
         "Audio/Affection/playbackani.mp3",
+        "Audio/Affection/playbackdead.mp3",
         "Audio/Affection/playbackki.mp3",
         "Audio/Affection/playbackml.mp3",
         "Audio/Affection/playbackmll.mp3",
