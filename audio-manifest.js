@@ -8,8 +8,11 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/playbackml.mp3",
         "Audio/Affection/playbackmll.mp3",
         "Audio/Affection/playbackosk.mp3",
+        "Audio/Affection/playbackosol.mp3",
         "Audio/Affection/playbackra.mp3",
         "Audio/Affection/playbackrel.mp3",
+        "Audio/Affection/playbacktham.mp3",
+        "Audio/Affection/playbackthbot.mp3",
         "Audio/Affection/playbackvaratho.mp3"
     ],
     "Enemy": [
@@ -38,6 +41,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Love/Playbackfn.mp3",
         "Audio/Love/playbackkal.mp3",
         "Audio/Love/playbackkmant.mp3",
+        "Audio/Love/playbackknana.mp3",
         "Audio/Love/playbacklp.mp3",
         "Audio/Love/playbackmas.mp3",
         "Audio/Love/playbackmila.mp3",
