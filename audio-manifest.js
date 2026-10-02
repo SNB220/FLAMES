@@ -37,8 +37,10 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Love/playbackca.mp3",
         "Audio/Love/Playbackfn.mp3",
         "Audio/Love/playbackkal.mp3",
+        "Audio/Love/playbackkmant.mp3",
         "Audio/Love/playbacklp.mp3",
         "Audio/Love/playbackmas.mp3",
+        "Audio/Love/playbackmila.mp3",
         "Audio/Love/playbackmz.mp3",
         "Audio/Love/playbackpasa.mp3"
     ],
@@ -48,6 +50,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Marriage/playbackma2.mp3",
         "Audio/Marriage/playbackmar.mp3",
         "Audio/Marriage/playbackmarthi.mp3",
+        "Audio/Marriage/playbacknanthava.mp3",
         "Audio/Marriage/playbackvt.mp3"
     ],
     "Siblings": [
