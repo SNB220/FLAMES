@@ -22,6 +22,9 @@ FLAMES stands for:
 - **S** - Siblings 👩‍👦
 
 ## 📸 Screenshots
+# FLAMES v2
+![Web_v](img/webview.png) 
+# FLAMES v1
 ![Mobile_v](https://github.com/user-attachments/assets/b991b0f8-7d62-4b26-9ca7-0c17ffaab053)
 <img width="734" height="735" alt="Screenshot 2025-07-31 234025" src="https://github.com/user-attachments/assets/e84c2be2-926a-4a0c-8136-6e8a8571112e" />
 
