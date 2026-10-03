@@ -160,6 +160,32 @@ function renderResultMeter(resultElement, resultType, emoji, description) {
             </div>
             <div class="meter-track" aria-hidden="true"><span style="--meter-progress: ${meterProgress}"></span></div>
         </div>`;
+
+    const resultSymbols = {
+        Friendship: '✦',
+        Love: '♥',
+        Affection: '♡',
+        Marriage: '✧',
+        Enemy: '×',
+        Siblings: '•'
+    };
+    const resultSymbol = resultSymbols[resultType];
+
+    if (resultSymbol) {
+        const resultCard = resultElement.querySelector('.result-card');
+        const visualClass = resultType.toLowerCase();
+        resultCard.classList.add('result-visual', `result-visual-${visualClass}`);
+        Array.from({ length: 5 }, (_, index) => {
+            const visualElement = document.createElement('span');
+            visualElement.className = `result-symbol ${index % 2 === 0 ? '' : 'result-symbol-gold'}`;
+            visualElement.setAttribute('aria-hidden', 'true');
+            visualElement.textContent = resultSymbol;
+            visualElement.style.setProperty('--symbol-x', `${18 + index * 16}%`);
+            visualElement.style.setProperty('--symbol-delay', `${index * 0.12}s`);
+            visualElement.style.setProperty('--symbol-size', `${index % 2 === 0 ? 20 : 15}px`);
+            resultCard.appendChild(visualElement);
+        });
+    }
 }
 
 const fallbackResultAudioTracks = window.FLAMES_AUDIO_TRACKS || {
