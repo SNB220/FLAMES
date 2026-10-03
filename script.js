@@ -31,7 +31,7 @@ document.getElementById('flamesForm').addEventListener('submit', function(event)
     // Simulate processing time for better UX
     setTimeout(() => {
         const result = calculateFlames(name1, name2);
-        showResult(result.message, result.type, result.emoji, result.resultType);
+        showResult(result.message, result.type, result.emoji, result.resultType, result.description);
         document.getElementById('restartBtn').style.display = 'block';
     }, 1500);
 });
@@ -90,14 +90,27 @@ function calculateFlames(name1, name2) {
         message: `${result.emoji} ${result.name} ${result.emoji}\n${result.description}`,
         type: "success",
         emoji: result.emoji,
-        resultType: result.name
+        resultType: result.name,
+        description: result.description
     };
 }
 
-function showResult(message, type, emoji = "", resultType = "") {
+function showResult(message, type, emoji = "", resultType = "", description = "") {
     const resultElement = document.getElementById('result');
-    resultElement.innerHTML = message.replace('\n', '<br>');
     resultElement.className = `text-center mt-3 ${type}`;
+
+    if (type === "success" && resultType) {
+        renderResultMeter(resultElement, resultType, emoji, description);
+    } else if (type === "perfect") {
+        resultElement.innerHTML = `
+            <div class="result-card perfect-card">
+                <span class="result-kicker">THE STARS AGREE</span>
+                <strong class="result-title">${emoji} Perfect Match</strong>
+                <span class="result-description">You're meant for each other.</span>
+            </div>`;
+    } else {
+        resultElement.textContent = message;
+    }
     
     // Add animation
     resultElement.classList.add('pulse');
@@ -110,6 +123,43 @@ function showResult(message, type, emoji = "", resultType = "") {
 
     // Hide loading if it was showing
     hideLoading();
+}
+
+function renderResultMeter(resultElement, resultType, emoji, description) {
+    const resultLabels = [
+        { name: 'Friendship', shortName: 'Friends', mark: 'F' },
+        { name: 'Love', shortName: 'Love', mark: 'L' },
+        { name: 'Affection', shortName: 'Affection', mark: 'A' },
+        { name: 'Marriage', shortName: 'Marriage', mark: 'M' },
+        { name: 'Enemy', shortName: 'Enemy', mark: 'E' },
+        { name: 'Siblings', shortName: 'Siblings', mark: 'S' }
+    ];
+
+    const activeIndex = resultLabels.findIndex((item) => item.name === resultType);
+    const meterProgress = `${((activeIndex + 0.5) / resultLabels.length) * 100}%`;
+
+    resultElement.innerHTML = `
+        <div class="result-card" aria-label="FLAMES result: ${resultType}">
+            <div class="result-card-topline">
+                <span class="result-kicker">YOUR RESULT</span>
+                <span class="result-count">06 / 06</span>
+            </div>
+            <div class="result-headline">
+                <span class="result-emoji" aria-hidden="true">${emoji}</span>
+                <div>
+                    <strong class="result-title">${resultType}</strong>
+                    <span class="result-description">${description}</span>
+                </div>
+            </div>
+            <div class="result-meter" role="list" aria-label="Relationship possibilities">
+                ${resultLabels.map((item) => `
+                    <div class="meter-step ${item.name === resultType ? 'is-active' : ''}" role="listitem">
+                        <span class="meter-dot">${item.mark}</span>
+                        <span class="meter-label">${item.shortName}</span>
+                    </div>`).join('')}
+            </div>
+            <div class="meter-track" aria-hidden="true"><span style="--meter-progress: ${meterProgress}"></span></div>
+        </div>`;
 }
 
 const fallbackResultAudioTracks = window.FLAMES_AUDIO_TRACKS || {
