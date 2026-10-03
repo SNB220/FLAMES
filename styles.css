@@ -23,7 +23,7 @@ body {
 
 .footer-bottom { width: 100%; max-width: 1180px; margin: 24px auto 0; text-align: center; color: var(--ink); font: 500 11px 'DM Mono', monospace; letter-spacing: .1em; }
 .footer-bottom span { color: var(--coral); margin: 0 8px; }
-.footer-bottom a { color: var(--coral); font-size: 13px; font-weight: 700; letter-spacing: .04em; text-decoration: none; transition: color .2s ease; }
+.footer-bottom a { color: var(--coral); font: inherit; font-weight: 700; text-decoration: none; transition: color .2s ease; }
 .footer-bottom a:hover { color: var(--ink); }
 .center-container { width: 100%; max-width: 1180px; margin: auto; }
 .app-shell { display: grid; grid-template-columns: minmax(300px, .9fr) minmax(420px, 1.1fr); width: 100%; min-height: 650px; background: var(--ink); box-shadow: 18px 18px 0 rgba(25, 25, 24, .08); animation: appear .7s ease both; }
