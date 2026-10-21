@@ -29,6 +29,7 @@ window.FLAMES_AUDIO_TRACKS = {
     ],
     "Friendship": [
         "Audio/Friendship/Friendship.mp3",
+        "Audio/Friendship/nanmuga.mp3",
         "Audio/Friendship/playbackadr.mp3",
         "Audio/Friendship/playbackdo.mp3",
         "Audio/Friendship/playbackff.mp3",
