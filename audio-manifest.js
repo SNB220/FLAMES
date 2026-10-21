@@ -16,6 +16,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/playbackrel.mp3",
         "Audio/Affection/playbacktham.mp3",
         "Audio/Affection/playbackthbot.mp3",
+        "Audio/Affection/playbackunno.mp3",
         "Audio/Affection/playbackvaratho.mp3",
         "Audio/Affection/playbackvas.mp3"
     ],
@@ -51,6 +52,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Love/playbacklp.mp3",
         "Audio/Love/playbackmas.mp3",
         "Audio/Love/playbackmila.mp3",
+        "Audio/Love/playbackmilaaa.mp3",
         "Audio/Love/playbackmz.mp3",
         "Audio/Love/playbackour.mp3",
         "Audio/Love/playbackpasa.mp3"
