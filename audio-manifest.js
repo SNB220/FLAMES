@@ -12,6 +12,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/playbackmll.mp3",
         "Audio/Affection/playbackosk.mp3",
         "Audio/Affection/playbackosol.mp3",
+        "Audio/Affection/Playbackpinala.mp3",
         "Audio/Affection/playbackra.mp3",
         "Audio/Affection/playbackrel.mp3",
         "Audio/Affection/playbacktham.mp3",
@@ -66,6 +67,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Marriage/playbackmarthi.mp3",
         "Audio/Marriage/playbacknanthava.mp3",
         "Audio/Marriage/playbacksara.mp3",
+        "Audio/Marriage/playbacksolaaadsd.mp3",
         "Audio/Marriage/playbackvt.mp3"
     ],
     "Siblings": [
