@@ -26,6 +26,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Enemy/Enemy.mp3",
         "Audio/Enemy/playbackbt.mp3",
         "Audio/Enemy/playbackffl.mp3",
+        "Audio/Enemy/Playbackpopo.mp3",
         "Audio/Enemy/playbacksev.mp3",
         "Audio/Enemy/playbacksp.mp3",
         "Audio/Enemy/playbackvil.mp3"
@@ -44,6 +45,7 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Friendship/playbacknunu.mp3"
     ],
     "Love": [
+        "Audio/Love/Audioaed.mp3",
         "Audio/Love/lgayauaoaua.mp3",
         "Audio/Love/Love.mp3",
         "Audio/Love/playbackca.mp3",
