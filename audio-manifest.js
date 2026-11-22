@@ -21,7 +21,8 @@ window.FLAMES_AUDIO_TRACKS = {
         "Audio/Affection/playbackthbot.mp3",
         "Audio/Affection/playbackunno.mp3",
         "Audio/Affection/playbackvaratho.mp3",
-        "Audio/Affection/playbackvas.mp3"
+        "Audio/Affection/playbackvas.mp3",
+        "Audio/Affection/untitledaudioennagum.mp3"
     ],
     "Enemy": [
         "Audio/Enemy/Enemy.mp3",
